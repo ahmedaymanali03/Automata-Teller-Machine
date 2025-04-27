@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo10.Withdraw"
+            prefHeight="400.0" prefWidth="600.0">
+   <children>
+      <TextField fx:id="amountField" layoutX="199.0" layoutY="136.0" prefHeight="26.0" prefWidth="160.0" />
+      <Button fx:id="withdrawButton" layoutX="234.0" layoutY="210.0" mnemonicParsing="false" text="Withdraw Amount" />
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Return to Transaction Page" />
+      <Label layoutX="37.0" layoutY="126.0" prefHeight="50.0" prefWidth="160.0" text="Enter amount to withdraw">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="ejectCardButton" layoutX="234.0" layoutY="269.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" text="Eject Card" />
+      <Label fx:id="statusLabel" layoutX="199.0" layoutY="337.0" prefHeight="26.0" prefWidth="202.0" text="Current state:" />
+      <Label fx:id="balanceLabel" layoutX="199.0" layoutY="101.0" prefHeight="26.0" prefWidth="160.0" text="Available balance: $0.00" />
+   </children>
+</AnchorPane>

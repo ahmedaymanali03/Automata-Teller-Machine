@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo10.PinEntryController">
+    <children>
+        <Label fx:id="cardNumberLabel" alignment="CENTER" layoutX="100.0" layoutY="30.0" prefHeight="30.0" prefWidth="200.0" text="Card: XXXX">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="90.0" layoutY="85.0" text="PIN:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="pinField" layoutX="90.0" layoutY="110.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter Your PIN">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </PasswordField>
+        <Label fx:id="attemptsLabel" alignment="CENTER" layoutX="100.0" layoutY="145.0" prefHeight="20.0" prefWidth="200.0" text="Attempts remaining: 3">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="enterPinButton" layoutX="140.0" layoutY="180.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Enter">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelButton" layoutX="140.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Cancel">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label fx:id="statusLabel" alignment="CENTER" layoutX="50.0" layoutY="260.0" prefHeight="20.0" prefWidth="300.0" text="Current state:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
